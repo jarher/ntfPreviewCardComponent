@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit-VariableFont_wght.ttf");
+}
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --size: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: var(--size);
+  font-family: "Outfit";
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+main {
+  background-color: var(--Very-dark-blue-main);
+  padding: 3.8rem 1.38rem;
+}
+.card {
+  background-color: var(--Very-dark-blue-card);
+  border-radius: 1rem;
+  padding: 1.38rem;
+}
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+.card-image-container img:nth-child(1) {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.card-image-container img:nth-child(2) {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+}
+.card-body {
+}
+.card-body h1 {
+  color: var(--White);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.card-body > p {
+  color: var(--Soft-blue);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.card-badges-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.card-badges-container img {
+}
+.card-badges-container div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.card-badges-container div:nth-child(1) {
+  color: var(--Cyan);
+}
+.card-badges-container div:nth-child(2) {
+  color: var(--Soft-blue);
+}
+hr {
+  border: 1px solid var(--Very-dark-blue-line);
+  margin-top: 0.83rem;
+}
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-author-avatar {
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  height: 1.94rem;
+  width: 1.94rem;
+}
+.card-author > p {
+  color: var(--Soft-blue);
+  font-size: 0.85rem;
+}
+.card-author > p span {
+  color: var(--White);
+}
