@@ -54,6 +54,7 @@ main {
 .card-image-container img:nth-child(1) {
   width: 100%;
   height: auto;
+  transform: scale(1.05);
 }
 .card-image-container img:nth-child(2) {
   display: block;
@@ -78,6 +79,7 @@ main {
   color: var(--White);
   font-size: 1.2rem;
   font-weight: 600;
+  letter-spacing: 0.05rem;
 }
 .card-body > p {
   color: var(--Soft-blue);
@@ -105,6 +107,7 @@ main {
 }
 hr {
   border: 1px solid var(--Very-dark-blue-line);
+  opacity: 0.5;
   margin: 0;
 }
 .card-author {
@@ -124,6 +127,7 @@ hr {
 }
 .card-author > p span {
   color: var(--White);
+  font-weight: 300;
 }
 .card-image-container::before,
 .card-body h1,
@@ -174,12 +178,14 @@ hr {
   }
   .card-author {
     gap: 0.6rem;
+    margin-bottom: 0.4rem;
   }
   .card-author-avatar {
     height: 1.38rem;
     width: 1.38rem;
   }
   .card-author > p {
-    font-size: 0.6rem;
+    font-size: 0.68rem;
+    word-spacing: 0.1rem;
   }
 }
